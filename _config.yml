@@ -25,7 +25,7 @@
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-#date_format: "%b %-d, %Y"
+date_format: "%b %-d, %Y"
 
 include:
   - insights
