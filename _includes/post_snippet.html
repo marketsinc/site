@@ -1,0 +1,17 @@
+<article class="post-snippet">
+    <header>
+        <a href="{{ post.url | relative_url }}">
+            <h2 class="title">
+                {{ post.title }}
+            </h2>
+        </a>
+    </header>
+    <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
+    <footer>
+<!--        <nav>-->
+<!--            {% for tag in post.tags %}-->
+<!--            <a href="/tag/{{ tag }}" class="tag">{{ tag }}</a>-->
+<!--            {% endfor %}-->
+<!--        </nav>-->
+    </footer>
+</article>

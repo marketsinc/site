@@ -4,11 +4,10 @@
 
 layout: page
 title: Markets, Inc.
+center: true
 ---
 
-<main class="flex h-screen items-center justify-center p-10">
-    <div class="w500max">
-        <h1 class="title">Markets, Inc.</h1>
+<div>
         <p>At Markets, Inc. we firmly believe that the protocols and primitives developed in the cryptocurrency sector will revolutionize traditional financial services and markets.</p>
         <p style="margin-top: 14px">
             <a href="/insights" style="display: inline-block">
@@ -18,15 +17,4 @@ title: Markets, Inc.
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
             </a>
         </p>
-        <hr style="
-    margin-top: 5px;
-    padding: 5px;
-">
-        <p style="
-    font-size: 10;
-    color: gray;
-">Copyright © 2025 Markets, Inc. Digital Assets Fund Management LLC All rights reserved. "Markets, Inc." is a registered trademark.</p>
-
-    </div>
-    </div>
-</main>
+</div>
