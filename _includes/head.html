@@ -8,6 +8,8 @@
     {% assign description = page.description %}
 {% endif %}
 
+{% assign url = site.url | append: page.url %}
+
 <head>
 
     <meta charset="utf-8">
@@ -31,13 +33,13 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@marketsincorp" />
     <meta name="twitter:title" content="{{ title }}" />
-    <meta name="twitter:url" content="https://markets.inc/" />
+    <meta name="twitter:url" content="{{ url }}" />
     <meta name="twitter:image" content="https://markets.inc/apple-touch-icon.png" />
     <meta name="twitter:description" content="{{ description }}">
 
     <meta property="og:site_name" content="Markets, Inc." />
     <meta property="og:title" content="{{ title }}" />
-    <meta property="og:url" content="https://markets.inc/" />
+    <meta property="og:url" content="{{ url }}" />
     <meta property="og:image" content="https://markets.inc/apple-touch-icon.png" />
     <meta property="og:description" content="{{ description }}">
 
