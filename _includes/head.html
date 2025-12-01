@@ -1,3 +1,13 @@
+{% assign title = "Markets, Inc" %}
+{% if page.title %}
+    {% assign title = page.title | append: ' | Markets, Inc.' %}
+{% endif %}
+
+{% assign description = "Markets, Inc. is an activist liquid fund operating in crypto markets." %}
+{% if page.description %}
+    {% assign description = page.description %}
+{% endif %}
+
 <head>
 
     <meta charset="utf-8">
@@ -5,7 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles.css">
 
-    <title>Markets, Inc.</title>
+    <title>{{ title }}</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
@@ -16,19 +26,19 @@
     <meta name="msapplication-TileImage" content="/images/favicon/android-chrome-192x192.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="description" content="Markets, Inc. is an activist liquid fund operating in crypto markets.">
+    <meta name="description" content="{{ description }}">
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@marketsincorp" />
-    <meta name="twitter:title" content="Markets, Inc." />
+    <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:url" content="https://markets.inc/" />
     <meta name="twitter:image" content="https://markets.inc/apple-touch-icon.png" />
-    <meta name="twitter:description" content="Markets, Inc. is an activist liquid fund operating in crypto markets.">
+    <meta name="twitter:description" content="{{ description }}">
 
     <meta property="og:site_name" content="Markets, Inc." />
-    <meta property="og:title" content="Markets, Inc." />
+    <meta property="og:title" content="{{ title }}" />
     <meta property="og:url" content="https://markets.inc/" />
     <meta property="og:image" content="https://markets.inc/apple-touch-icon.png" />
-    <meta property="og:description" content="Markets, Inc. is an activist liquid fund operating in crypto markets.">
+    <meta property="og:description" content="{{ description }}">
 
 </head>
