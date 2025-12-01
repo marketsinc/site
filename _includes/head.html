@@ -1,9 +1,9 @@
-{% assign title = "Markets, Inc" %}
+{% assign title = site.title %}
 {% if page.title %}
-    {% assign title = page.title | append: ' | Markets, Inc.' %}
+    {% assign title = page.title | append: ' | ' | append: site.title %}
 {% endif %}
 
-{% assign description = "Markets, Inc. is an activist liquid fund operating in crypto markets." %}
+{% assign description = site.description %}
 {% if page.description %}
     {% assign description = page.description %}
 {% endif %}
