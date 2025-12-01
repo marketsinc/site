@@ -8,6 +8,14 @@ body {
       max-width: 450px;
 }
 
+.w550max {
+      max-width: 550px;
+}
+
+.article-header {
+    padding-bottom: 25px;
+}
+
 h1.title {
     font-size: 28px;
     font-weight: bold;
