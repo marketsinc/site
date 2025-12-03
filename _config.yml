@@ -26,16 +26,22 @@ url: "https://markets.inc"
 #github_username:  jekyll
 date_format: "%b %-d, %Y"
 
-include:
-  - insights
+collections:
+  insights:
+    output: true
+    permalink: /insights/:name/
+
+pagination:
+  enabled: true
+  collection: insight
 
 # Build settings
 markdown: kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     5
-paginate_path: "/insights/:num/"
+#paginate:     5
+#paginate_path: "/insights/:num/"
 plugins:
   - jekyll-paginate
   - jekyll-sitemap

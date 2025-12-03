@@ -2,10 +2,11 @@
 layout: page
 title: Insights
 ---
-{% assign posts_count = paginator.posts | size %}
 
-{% for post in paginator.posts %}
-{% include post_snippet.html %}
-{% endfor %}
-
-{% include pagination.html %}
+{% if site.insights.size == 0 %}
+    Nothing to see here.
+{% else %}
+    {% for post in site.insights %}
+    {% include post_snippet.html %}
+    {% endfor %}
+{% endif %}
