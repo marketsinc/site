@@ -10,18 +10,6 @@ body {
     padding-bottom: 5px;
 }
 
-.w500max {
-      max-width: 450px;
-}
-
-.w550max {
-      max-width: 550px;
-}
-
-.article-header {
-    padding-bottom: 25px;
-}
-
 h1.title {
     font-size: 28px;
     font-weight: bold;
@@ -33,27 +21,10 @@ h2.title {
     font-weight: bold;
 }
 
-.center {
-    text-align: center;
-}
-
 .icon {
     width: 1.05em;
     height: 1.05em;
     vertical-align: -0.125em;
-}
-
-.icon-list > li {
-    padding-right: 5px;
-}
-
-.icon-list {
-    padding-top: 14px;
-    padding-bottom: 14px;
-}
-
-.underline {
-    text-decoration: underline;
 }
 
 .link:link { color: #0000EE; }

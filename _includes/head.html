@@ -14,6 +14,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Performance -->
+    <meta http-equiv="X-DNS-Prefetch-Control" content="on">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/styles.css">
 
@@ -30,17 +35,44 @@
 
     <meta name="description" content="{{ description }}">
 
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Markets, Inc.">
+    <link rel="canonical" href="{{ url }}">
+
+    <!-- Security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@marketsincorp" />
     <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:url" content="{{ url }}" />
-    <meta name="twitter:image" content="https://markets.inc/apple-touch-icon.png" />
+    <meta name="twitter:image" content="https://markets.inc/assets/images/favicon/apple-touch-icon.png" />
     <meta name="twitter:description" content="{{ description }}">
 
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:url" content="{{ url }}" />
-    <meta property="og:image" content="https://markets.inc/apple-touch-icon.png" />
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://markets.inc/assets/images/favicon/apple-touch-icon.png" />
     <meta property="og:description" content="{{ description }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+        "https://x.com/marketsincorp"
+      ],
+      "serviceType": "Investment Management",
+      "areaServed": "Global"
+    }
+    </script>
 
 </head>
