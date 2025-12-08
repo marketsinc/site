@@ -1,0 +1,17 @@
+---
+layout: page
+title: Team
+---
+
+<div>
+    {% for person in site.data.team %}
+
+    <h2 class="title">{{ person.name }}</h2>
+
+    <small>{{ person.title }}</small>
+
+    <p style="padding-bottom: 10px">{{ person.bio }}</p>
+
+    {% endfor %}
+
+</div>
