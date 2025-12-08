@@ -1,11 +1,11 @@
 {% assign title = site.title %}
 {% if page.title %}
-{% assign title = page.title | append: ' | ' | append: site.title %}
+    {% assign title = page.title | append: ' | ' | append: site.title %}
 {% endif %}
 
 {% assign description = site.description %}
 {% if page.description %}
-{% assign description = page.description %}
+    {% assign description = page.description %}
 {% endif %}
 
 {% assign url = site.url | append: page.url %}
