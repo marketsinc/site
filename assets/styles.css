@@ -38,9 +38,18 @@ h2.title {
 }
 
 .icon {
-    width: 1em;
-    height: 1em;
+    width: 1.05em;
+    height: 1.05em;
     vertical-align: -0.125em;
+}
+
+.icon-list > li {
+    padding-right: 5px;
+}
+
+.icon-list {
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .underline {
