@@ -4,6 +4,12 @@ body {
     font-family: "Times New Roman";
 }
 
+.footer-notice {
+    font-size: 10;
+    color: gray;
+    padding-bottom: 5px;
+}
+
 .w500max {
       max-width: 450px;
 }
@@ -20,8 +26,9 @@ body {
 }
 
 .icon {
-    margin-top: 14px;
-    height: 18px;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
 }
 
 .link:link { color: #0000EE; }
