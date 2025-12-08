@@ -10,6 +10,8 @@
 
 {% assign url = site.url | append: page.url %}
 
+{% assign image = "https://markets.inc/assets/images/favicon/apple-touch-icon.png" %}
+
 <head>
 
     <meta charset="utf-8">
@@ -37,7 +39,7 @@
 
     <!-- SEO -->
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Markets, Inc.">
+    <meta name="author" content="{{ site.title }}">
     <link rel="canonical" href="{{ url }}">
 
     <!-- Security -->
@@ -49,7 +51,7 @@
     <meta name="twitter:site" content="@marketsincorp" />
     <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:url" content="{{ url }}" />
-    <meta name="twitter:image" content="https://markets.inc/assets/images/favicon/apple-touch-icon.png" />
+    <meta name="twitter:image" content="{{ image }}" />
     <meta name="twitter:description" content="{{ description }}">
 
     <meta property="og:site_name" content="{{ site.title }}" />
@@ -57,7 +59,7 @@
     <meta property="og:url" content="{{ url }}" />
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://markets.inc/assets/images/favicon/apple-touch-icon.png" />
+    <meta property="og:image" content="{{ image }}" />
     <meta property="og:description" content="{{ description }}">
 
     <script type="application/ld+json">
