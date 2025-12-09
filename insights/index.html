@@ -1,0 +1,12 @@
+---
+layout: page
+title: Insights
+---
+
+{% if site.insights.size == 0 %}
+    Nothing to see here.
+{% else %}
+    {% for post in site.insights %}
+    {% include post_snippet.html %}
+    {% endfor %}
+{% endif %}

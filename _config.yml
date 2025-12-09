@@ -22,9 +22,14 @@ title: "Markets, Inc."
 description: "Markets, Inc. is an activist liquid fund operating in crypto markets."
 #baseurl: "/light" # the subpath of your site, e.g. /blog
 url: "https://markets.inc"
-#twitter_username: jekyllrb
+twitter_username: marketsincorp
 #github_username:  jekyll
 date_format: "%b %-d, %Y"
+
+collections:
+  insights:
+    output: true
+    permalink: /insights/:name/
 
 pagination:
   enabled: true
