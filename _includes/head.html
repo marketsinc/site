@@ -67,6 +67,40 @@
     <meta property="og:image" content="{{ image }}" />
     <meta property="og:description" content="{{ description }}">
 
+    {% if page.layout == 'post' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ page.title | escape }}",
+      "description": "{{ page.description | escape }}",
+      "image": "{{ site.url }}{{ page.featured_image }}",
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.date | date_to_xmlschema }}",
+      "author": [
+        {% for author in page.authors %}
+        {
+          "@type": "Person",
+          "name": "{{ author.name | escape }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/assets/images/favicon/android-chrome-512x512.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+      },
+      "url": "{{ site.url }}{{ page.url }}"
+    }
+    </script>
+    {% else %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -81,5 +115,6 @@
       "areaServed": "Global"
     }
     </script>
+    {% endif %}
 
 </head>
