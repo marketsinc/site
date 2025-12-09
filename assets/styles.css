@@ -29,3 +29,7 @@ h2.title {
 .link:link { color: #0000EE; }
 .link:visited { color: #551A8B; }
 .link:link:active, .link:visited:active { color: #FF0000; }
+
+.post > p {
+    margin-bottom: 0.75rem;
+}
