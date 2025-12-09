@@ -5,6 +5,9 @@ layout: default
 
     <article class="max-w-xl">
         <header class="article-header mb-3">
+
+            {% include breadcrumbs.html %}
+
             <h1 class="title" itemprop="headline">{{ page.title }}</h1>
 
             <p class="date" itemprop="datePublished" content="{{ page.date }}">
