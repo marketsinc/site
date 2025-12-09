@@ -53,7 +53,7 @@
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 
     <meta name="twitter:card" content="{{ card }}" />
-    <meta name="twitter:site" content="@marketsincorp" />
+    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
     <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:url" content="{{ url }}" />
     <meta name="twitter:image" content="{{ image }}" />
@@ -75,7 +75,7 @@
       "description": "{{ site.description }}",
       "url": "{{ site.url }}",
       "sameAs": [
-        "https://x.com/marketsincorp"
+        "https://x.com/{{ site.twitter_username }}"
       ],
       "serviceType": "Investment Management",
       "areaServed": "Global"
