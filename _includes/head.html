@@ -11,6 +11,11 @@
 {% assign url = site.url | append: page.url %}
 
 {% assign image = "https://markets.inc/assets/images/favicon/apple-touch-icon.png" %}
+{% assign card = "summary" %}
+{% if page.featured_image %}
+    {% assign image = page.featured_image %}
+    {% assign card = "summary_large_image" %}
+{% endif %}
 
 <head>
 
@@ -47,7 +52,7 @@
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="{{ card }}" />
     <meta name="twitter:site" content="@marketsincorp" />
     <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:url" content="{{ url }}" />
