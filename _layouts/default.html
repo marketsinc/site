@@ -3,6 +3,8 @@
 {% include head.html %}
 
     <body>
-    {{ content }}
+        <main class="flex h-screen justify-center p-4 {% if page.center %}items-center{% endif %}">
+            {{ content }}
+        </main>
     </body>
 </html>
