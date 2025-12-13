@@ -22,6 +22,7 @@
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="sr-only">
             <meta itemprop="position" content="{{ forloop.index | plus: 1 }}">
             <span itemprop="name" aria-current="page">{{ page.title }}</span>
+            <meta itemprop="item" content="{{ site.url }}{{ page.url }}">
         </li>
         {% endif %}
         {% endfor %}
