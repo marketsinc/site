@@ -6,7 +6,10 @@ title: Insights
 {% if site.insights.size == 0 %}
     Nothing to see here.
 {% else %}
-    {% for post in site.insights %}
+    {% for post in site.insights reversed %}
     {% include post_snippet.html %}
+
+    {% unless forloop.last %} <hr class="mt-2 pb-2"/>{% endunless %}
+
     {% endfor %}
 {% endif %}
