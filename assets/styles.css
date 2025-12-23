@@ -33,3 +33,7 @@ h2.title {
 .post > p {
     margin-bottom: 0.75rem;
 }
+
+.bold-marker > li::marker {
+    font-weight: bold;
+}
