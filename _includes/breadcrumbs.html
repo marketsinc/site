@@ -4,7 +4,14 @@
         <li class="inline-flex items-center" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
             <meta itemprop="position" content="1">
             <a href="/" class="inline-flex items-center text-sm font-medium text-body hover:text-fg-brand" itemprop="item">
-                <span itemprop="name">{{ site.title }}</span>
+                <span>
+                    {% if crumbs.size == 2 %}
+                        ← Home
+                    {% else %}
+                        {{ site.title }}
+                    {% endif %}
+                </span>
+                <meta itemprop="name" content="{{ site.title }}">
             </a>
         </li>
         {% for crumb in crumbs offset: 1 %}
