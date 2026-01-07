@@ -4,13 +4,16 @@
         <li class="inline-flex items-center" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
             <meta itemprop="position" content="1">
             <a href="/" class="inline-flex items-center text-sm font-medium text-body hover:text-fg-brand" itemprop="item">
-                <span>
                     {% if crumbs.size == 2 %}
-                        ← Home
+                        <div class="flex items-center space-x-1.5">
+                            <svg class="w-3.5 h-3.5 rtl:rotate-180 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+                            <span class="inline-flex items-center text-sm font-medium">Home</span>
+                        </div>
                     {% else %}
-                        {{ site.title }}
+                        <span>
+                            {{ site.title }}
+                        </span>
                     {% endif %}
-                </span>
                 <meta itemprop="name" content="{{ site.title }}">
             </a>
         </li>
