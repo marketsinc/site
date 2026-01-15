@@ -9,7 +9,7 @@ title: Insights
     {% for post in site.insights reversed %}
     {% include post_snippet.html %}
 
-    {% unless forloop.last %} <hr class="mt-2 pb-2"/>{% endunless %}
+    {% unless forloop.last %} <hr class="pb-2"/>{% endunless %}
 
     {% endfor %}
 {% endif %}
