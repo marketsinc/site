@@ -12,6 +12,12 @@ center: true
 
     <ul class="flex flex-wrap items-center py-2 text-sm">
         <li class="pr-2">
+            <a href="/investors" title="Investors" class="link underline">
+                Investors
+            </a>
+        </li>
+        <li class="pr-2">•</li>
+        <li class="pr-2">
             <a href="/insights" title="Insights" class="link underline">
                 Insights
             </a>
