@@ -32,7 +32,7 @@ h2.title {
 
 .link { cursor: pointer; }
 .link:link { color: #0000EE; }
-.link:visited { color: #551A8B; }
+.link:visited { color: #551A8B; cursor: pointer; }
 .link:link:active, .link:visited:active { color: #FF0000; }
 
 .post > p {
