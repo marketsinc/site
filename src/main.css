@@ -30,6 +30,7 @@ h2.title {
     vertical-align: -0.125em;
 }
 
+.link { cursor: pointer; }
 .link:link { color: #0000EE; }
 .link:visited { color: #551A8B; }
 .link:link:active, .link:visited:active { color: #FF0000; }
