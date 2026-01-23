@@ -10,7 +10,7 @@
 
 {% assign url = site.url | append: page.url %}
 
-{% assign image = "https://markets.inc/assets/images/favicon/favicon.svg" %}
+{% assign image = "https://markets.inc/assets/images/favicon/og-image.png" %}
 {% assign card = "summary" %}
 {% if page.featured_image %}
     {% assign image = site.url | append: page.featured_image %}
@@ -82,7 +82,7 @@
         "name": "{{ site.title }}",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{ site.url }}/assets/images/favicon/favicon.svg"
+          "url": "{{ site.url }}/assets/images/favicon/og-image.png"
         }
       },
       "mainEntityOfPage": {
