@@ -37,8 +37,8 @@ pagination:
 
 # Build settings
 markdown: kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+kramdown:
+  input: GFM
 permalink:    pretty
 #paginate:     5
 #paginate_path: "/insights/:num/"

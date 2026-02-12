@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "npm run build:css && JEKYLL_ENV=production bundle exec jekyll build",
     "build:css": "npx tailwindcss -i ./src/main.css -o ./assets/styles.css --minify",
-    "watch:css": "npx tailwindcss -i ./src/main.css -o ./assets/styles.css --watch"
+    "watch:css": "npx tailwindcss -i ./src/main.css -o ./assets/styles.css --watch",
+    "dev": "npm run build:css && bundle exec jekyll serve --livereload",
+    "deploy": "vercel --prod"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.0"
