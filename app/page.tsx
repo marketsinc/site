@@ -26,7 +26,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <hr />
+        <hr style={{ marginTop: '5px', padding: '5px' }} />
         <p className="footer-notice">
           Copyright 2025 Markets, Inc. Digital Assets Fund Management LLC All rights reserved.
         </p>
