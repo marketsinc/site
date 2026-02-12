@@ -75,11 +75,6 @@ export default async function InsightPage({ params }: PageProps) {
             </small>
           </p>
 
-          {insight.featured_image && (
-            <p>
-              <img src={insight.featured_image} alt={insight.title} />
-            </p>
-          )}
         </header>
 
         <section className="post" dangerouslySetInnerHTML={{ __html: insight.htmlContent || '' }} />

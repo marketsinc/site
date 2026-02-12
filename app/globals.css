@@ -42,6 +42,19 @@
         margin-bottom: 0.75rem;
     }
 
+    .post blockquote {
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-inline-start-width: 4px;
+        border-color: #e5e7eb;
+    }
+
+    .post blockquote p {
+        font-style: italic;
+        line-height: 1.625;
+    }
+
     .bold-marker > li::marker {
         font-weight: bold;
     }
