@@ -1,6 +1,3 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
 node_modules/
-assets/styles.css
+.next/
+out/

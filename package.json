@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build:css && JEKYLL_ENV=production bundle exec jekyll build",
-    "build:css": "npx tailwindcss -i ./src/main.css -o ./assets/styles.css --minify",
-    "watch:css": "npx tailwindcss -i ./src/main.css -o ./assets/styles.css --watch",
-    "dev": "npm run build:css && bundle exec jekyll serve --livereload",
-    "deploy": "vercel --prod"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.0"
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
   }
 }
