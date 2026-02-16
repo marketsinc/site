@@ -54,3 +54,8 @@ exclude:
   - README.md
   - screenshot.png
   - vendor
+  - node_modules
+  - .next
+  - out
+  - package.json
+  - package-lock.json
