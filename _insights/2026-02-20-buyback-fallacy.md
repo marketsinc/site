@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Buyback Fallacy"
-date:   2026-02-20 01:00:00 +0000
+date:   2026-02-25 01:00:00 +0000
 authors:
   - name: Dean Eigenmann
 permalink: "/insights/buyback-fallacy"
