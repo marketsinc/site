@@ -9,7 +9,7 @@ description: "Before asking whether a protocol should return capital, we should 
 featured_image: /assets/images/articles/liquidity-illusion/header.png
 ---
 
-In my previous post we looked at [when buybacks work and when they don't](/insights/buyback-fallacy). The analysis assumes something that may not be true for most tokens: that there is a functioning market on the other side of the trade. Before asking whether a protocol should return capital, we should first ask who the marginal buyer is.
+In my previous post we looked at <a class="link underline" href="/insights/buyback-fallacy">when buybacks work and when they don't</a>. The analysis assumes something that may not be true for most tokens: that there is a functioning market on the other side of the trade. Before asking whether a protocol should return capital, we should first ask who the marginal buyer is.
 
 In traditional equity markets, the bid is mechanical. A company like Apple can issue shares through employee compensation because index funds, pension allocators, and 401(k) contributions absorb supply on schedule, regardless of sentiment.
 
