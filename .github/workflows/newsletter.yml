@@ -1,0 +1,45 @@
+name: Send Newsletter
+
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types: [completed]
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 2
+
+      - name: Detect new posts
+        id: detect
+        run: |
+          POSTS=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- '_insights/*.md')
+          if [ -z "$POSTS" ]; then
+            echo "No new posts detected, skipping newsletter"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "New posts detected:"
+            echo "$POSTS"
+            EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+            echo "posts<<$EOF" >> $GITHUB_OUTPUT
+            echo "$POSTS" >> $GITHUB_OUTPUT
+            echo "$EOF" >> $GITHUB_OUTPUT
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send newsletter
+        if: steps.detect.outputs.skip != 'true'
+        env:
+          NEW_POSTS: ${{ steps.detect.outputs.posts }}
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+          MAILCHIMP_LIST_ID: ${{ secrets.MAILCHIMP_LIST_ID }}
+          MAILCHIMP_FROM_EMAIL: ${{ secrets.MAILCHIMP_FROM_EMAIL }}
+        run: python .github/scripts/send-newsletter.py
