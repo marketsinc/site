@@ -67,7 +67,9 @@ def format_body_html(paragraphs):
         p = re.sub(r'href="/', 'href="https://markets.inc/', p)
         # Strip class attributes (not useful in email)
         p = re.sub(r'\s+class="[^"]*"', "", p)
-        parts.append(f'<p style="margin: 0 0 24px 0;">\n{p}\n</p>')
+        # Style links to match site (blue, underlined)
+        p = re.sub(r"<a ", '<a style="color: #0000EE; text-decoration: underline;" ', p)
+        parts.append(f'<p style="margin: 0 0 12px 0;">\n{p}\n</p>')
     return "\n".join(parts)
 
 

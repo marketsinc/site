@@ -81,31 +81,22 @@
 
           <!-- Article -->
           <tr>
-            <td style="padding-bottom: 56px;">
-
-              <!-- Date -->
-              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                <tr>
-                  <td style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 13px; color: #666666; padding-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
-                    {{DATE}}
-                  </td>
-                </tr>
-              </table>
+            <td style="padding-bottom: 40px;">
 
               <!-- Title -->
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tr>
-                  <td style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 32px; line-height: 1.2; color: #000000; padding-bottom: 24px; font-weight: 400;">
+                  <td style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 28px; line-height: 1.6; color: #000000; padding-bottom: 8px; font-weight: 700;">
                     {{TITLE}}
                   </td>
                 </tr>
               </table>
 
-              <!-- Author -->
+              <!-- Date & Author -->
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tr>
-                  <td style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 14px; color: #666666; padding-bottom: 32px;">
-                    By {{AUTHOR}}
+                  <td style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 14px; color: gray; padding-bottom: 24px;">
+                    {{DATE}}<span style="padding: 0 8px;">&#8226;</span>By {{AUTHOR}}
                   </td>
                 </tr>
               </table>
@@ -113,7 +104,7 @@
               <!-- Body -->
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tr>
-                  <td style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 17px; line-height: 1.7; color: #1a1a1a;">
+                  <td style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 18px; line-height: 1.6; color: #000000;">
                     {{BODY}}
                   </td>
                 </tr>
@@ -122,9 +113,9 @@
               <!-- CTA -->
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tr>
-                  <td style="padding-top: 32px;">
-                    <a href="{{URL}}" style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 14px; color: #000000; text-decoration: none; border-bottom: 1px solid #000000; padding-bottom: 2px;">
-                      Read full article →
+                  <td style="padding-top: 24px;">
+                    <a href="{{URL}}" style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 18px; color: #0000EE; text-decoration: underline;">
+                      Read full article
                     </a>
                   </td>
                 </tr>
@@ -143,9 +134,8 @@
             <td>
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tr>
-                  <td style="padding-bottom: 32px;">
-                    <a href="https://markets.inc" style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 13px; color: #666666; text-decoration: none; margin-right: 24px;">Website</a>
-                    <a href="https://twitter.com/marketsinc" style="font-family: 'Times New Roman', Times, Georgia, serif; font-size: 13px; color: #666666; text-decoration: none;">Twitter</a>
+                  <td style="padding-bottom: 32px; font-family: 'Times New Roman', Times, Georgia, serif; font-size: 14px;">
+                    <a href="https://investors.markets.inc" style="color: #0000EE; text-decoration: underline;">Investors</a><span style="padding: 0 6px;">&#8226;</span><a href="https://markets.inc/insights" style="color: #0000EE; text-decoration: underline;">Insights</a><span style="padding: 0 6px;">&#8226;</span><a href="https://x.com/marketsincorp" style="color: #0000EE; text-decoration: underline;">X</a>
                   </td>
                 </tr>
               </table>
@@ -154,11 +144,11 @@
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tr>
                   <td style="border-top: 1px solid #e5e5e5; padding-top: 32px;">
-                    <p style="margin: 0 0 16px 0; font-family: 'Times New Roman', Times, Georgia, serif; font-size: 11px; line-height: 1.6; color: #999999;">
+                    <p style="margin: 0 0 12px 0; font-family: 'Times New Roman', Times, Georgia, serif; font-size: 10px; line-height: 1.6; color: gray;">
                       This newsletter is for informational purposes only and does not constitute investment advice or an offer to sell or a solicitation to buy any securities or investment products. All investments involve risk, including the possible loss of principal. Past performance is not indicative of future results.
                     </p>
-                    <p style="margin: 0 0 24px 0; font-family: 'Times New Roman', Times, Georgia, serif; font-size: 11px; line-height: 1.6; color: #999999;">
-                      &copy; {{YEAR}} Markets, Inc. Digital Assets Fund Management LLC. All rights reserved.
+                    <p style="margin: 0 0 16px 0; font-family: 'Times New Roman', Times, Georgia, serif; font-size: 10px; line-height: 1.6; color: gray;">
+                      Copyright &copy; {{YEAR}} Markets, Inc. Digital Assets Fund Management LLC. All rights reserved. "Markets, Inc." is a registered trademark.
                     </p>
                   </td>
                 </tr>
